@@ -15,10 +15,22 @@
 html,
 body {
   background-color: #f4f4fc;
+  height: 100%;
 }
 
 inspect {
   border: thin solid red;
+}
+
+#App{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.navbar{
+  flex-grow: 1;
+  max-height: 70px;
 }
 
 .Landing {
@@ -26,10 +38,18 @@ inspect {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  flex-grow: 2;
 }
 
 .Landing .jumbotron {
   opacity: 0.92;
+  height: 100%;
+}
+
+.justify-center{
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .navbar-dark {
@@ -44,13 +64,17 @@ inspect {
   border-radius: 50%;
 }
 
-/* Scaffolding */
-
-#App {
-  min-height: 100vh;
-}
-
 .panel-landing {
   max-width: 50em;
   margin: auto;
 }
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-height: 60px;
+}
+
